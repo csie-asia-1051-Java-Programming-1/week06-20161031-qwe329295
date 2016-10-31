@@ -4,12 +4,23 @@
  * Date: 2016/10/31
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.*;
 public class ex05 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn =new Scanner(System.in);
+		System.out.println("輸入一個整數");
+		int n= scn.nextInt();
+		System.out.print(fun1(n));
 
 	}
-
+public static int fun1(int n){
+	int b=0;
+	while(n>0){
+		b=b+n%10;
+		n/=10;
+	}
+	return b;
+}
 }
